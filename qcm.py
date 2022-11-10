@@ -80,5 +80,7 @@ while q < len(questions):
         print("\033[0;31mTu as mauvais...\033[0;35m")
         point -= down_point
 
+    if(questions[q][1][int(n) - 1][2]) :
+        print("Feedback: " + questions[q][1][int(n) - 1][2])
     print("Tes points sont a " + str(point) + "/" + str(len(questions) * up_point))
     q+=1
