@@ -22,17 +22,17 @@ print("\033[0;36m================================================\033[0;35m")
     - Hard : correct : +1 incorrect : -2
 '''
 while True :
-    lvl = input("\033[0;36mEntrer votre difficultées : \u001b[37m")
+    lvl = input("\033[0;36mEntrer votre difficultée : \u001b[37m")
     if (not lvl.isnumeric()) :
         print("\u001b[31mVotre reponse doit être un nombre!")
     elif not (1 <= int(lvl) and int(lvl) <= 3):
-        print("\u001b[31mCette reponse existe pas! Entrer un index valide...")
+        print("\u001b[31mCette réponse existe pas! Entrer un index valide...")
     else :
         break
 '''
-    La while permet de demander a l'utilisateur ca reponse tout en
+    La while permet de demander a l'utilisateur ca réponse tout en
     sachant si elle a le format valide. C'est a dire si c'est bien un nombre
-    sinon il renvoie une erreur et redemande une reponse valide
+    sinon il renvoie une erreur et redemande une réponse valide
 '''
 if(lvl == "1") :
     up_point = 2
@@ -54,18 +54,18 @@ while q < len(questions):
         print("\t\t" + str(r+1) + ") " + questions[q][1][r][0])
 
     '''
-        La while permet de demander a l'utilisateur ca reponse tout en
+        La while permet de demander a l'utilisateur ca réponse tout en
         sachant si elle a le format valide. C'est a dire si c'est bien un nombre
-        sinon il renvoie une erreur et demande une nouvelle reponse.
+        sinon il renvoie une erreur et demande une nouvelle réponse.
     '''
 
     while True :
         n = input("\033[0;36mEnter your answer : \u001b[37m")
 
         if (not n.isnumeric()) :
-            print("\u001b[31mVotre reponse doit être un nombre!")
+            print("\u001b[31mVotre réponse doit être un nombre!")
         elif  (not (1 <= int(n) and int(n) <= len(questions[q][1]))):
-            print("\u001b[31mCette reponse existe pas! Entrer un index valide...")
+            print("\u001b[31mCette réponse existe pas! Entrer un index valide...")
         else :
             break
 
